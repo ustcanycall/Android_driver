@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ipu</string>
-    <string name="value">Value</string>
-    <string name="hint">Please input a value...</string>
-    <string name="read">Read</string>
-    <string name="write">Write</string>
-    <string name="clear">Clear</string>
+    <string name="mmap_buffer">MMAP BUFFER TEST</string>
+    <string name="buffer_offset_hint">Please input buffer offset...</string>
+    <string name="buffer_hint">Please input a value...</string>
+    <string name="buffer_read">Read</string>
+    <string name="buffer_write">Write</string>
+    <string name="buffer_clear">Clear</string>
+
+    <string name="config_reg">CONFIG REGISTER TEST</string>
+    <string name="reg_offset_hint">Please input reg offset...</string>
+    <string name="reg_hint">Please input a value...</string>
+    <string name="reg_read">Read</string>
+    <string name="reg_write">Write</string>
+    <string name="reg_clear">Clear</string>
 </resources>

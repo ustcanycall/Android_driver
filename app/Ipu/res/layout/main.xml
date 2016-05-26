@@ -12,13 +12,19 @@
     	<TextView 
 			android:layout_width="wrap_content"
        		android:layout_height="wrap_content" 
-        	android:text="@string/value">
+        	android:text="@string/mmap_buffer">
     	</TextView>
     	<EditText 
      		android:layout_width="fill_parent"
         	android:layout_height="wrap_content" 
-        	android:id="@+id/edit_value"
-        	android:hint="@string/hint">
+        	android:id="@+id/buffer_offset_value"
+        	android:hint="@string/buffer_offset_hint">
+    	</EditText>
+    	<EditText 
+     		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/buffer_value"
+        	android:hint="@string/buffer_hint">
     	</EditText>
     </LinearLayout>
      <LinearLayout
@@ -27,22 +33,71 @@
     	android:orientation="horizontal" 
     	android:gravity="center">
     	<Button 
-    		android:id="@+id/button_read"
+    		android:id="@+id/buffer_button_read"
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
-    		android:text="@string/read">
+    		android:text="@string/buffer_read">
     	</Button>
     	<Button 
-    		android:id="@+id/button_write"
+    		android:id="@+id/buffer_button_write"
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
-    		android:text="@string/write">
+    		android:text="@string/buffer_write">
     	</Button>
     	<Button 
-    		android:id="@+id/button_clear"
+    		android:id="@+id/buffer_button_clear"
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
-    		android:text="@string/clear">
+    		android:text="@string/buffer_clear">
     	</Button>
     </LinearLayout>
+
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:gravity="center">
+    	<TextView 
+			android:layout_width="wrap_content"
+       		android:layout_height="wrap_content" 
+        	android:text="@string/config_reg">
+    	</TextView>
+    	<EditText 
+     		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/reg_offset_value"
+        	android:hint="@string/reg_offset_hint">
+    	</EditText>
+    	<EditText 
+     		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/reg_value"
+        	android:hint="@string/reg_hint">
+    	</EditText>
+    </LinearLayout>
+     <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:gravity="center">
+    	<Button 
+    		android:id="@+id/reg_button_read"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/reg_read">
+    	</Button>
+    	<Button 
+    		android:id="@+id/reg_button_write"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/reg_write">
+    	</Button>
+    	<Button 
+    		android:id="@+id/reg_button_clear"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/reg_clear">
+    	</Button>
+    </LinearLayout>
+
 </LinearLayout>
