@@ -1,0 +1,5 @@
+config IPU
+	tristate "IPU DEVICE Driver"
+	default y
+	help
+	This is ipu device driver for android system.
