@@ -237,7 +237,7 @@ static short ipu_read_config_word(struct ipu_device_t * dev, int offset)
 
 static int ipu_read_config_dword(struct ipu_device_t * dev, int offset)
 {
-    short ret_value;
+    int ret_value;
     if (!dev)
     {
         ALOGE("[IPU_HAL]: Null dev pointer.");
