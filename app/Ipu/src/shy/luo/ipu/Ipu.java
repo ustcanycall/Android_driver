@@ -118,15 +118,13 @@ public class Ipu extends Activity implements OnClickListener {
         {
 		    try {
                 int offset;
-                int reg_value;
-
                 String offset_text = regoffsetText.getText().toString();
-                offset = Integer.parseInt(offset_text);
+                offset = Integer.parseInt(offset_text, 16);
 
-    			ipuService.start();
-
+                int reg_value;
     			reg_value = ipuService.read_config_dword(offset);
-    			String text = String.valueOf(reg_value);
+    			//String text = String.valueOf(reg_value);
+                String text = Integer.toHexString(reg_value);
     			regvalueText.setText(text);
 		    } 
             catch (RemoteException e) 
@@ -140,12 +138,11 @@ public class Ipu extends Activity implements OnClickListener {
             {
                 int reg_value;
     			String text = regvalueText.getText().toString();
-    			reg_value = Integer.parseInt(text);
+    			reg_value = Integer.parseInt(text,16);
 
                 int offset;
                 String offset_text = regoffsetText.getText().toString();
-                offset = Integer.parseInt(offset_text);
-			    ipuService.reset();
+                offset = Integer.parseInt(offset_text,16);
 
 			    ipuService.write_config_dword(offset, reg_value);
 		    } 
